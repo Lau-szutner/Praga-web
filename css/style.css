@@ -2,7 +2,7 @@ body{
     background-color: black;
 }
 .indexHeader{
-    height: 1000px;
+    height: 100vh;
     width: auto;
     background-image: url(../img/Praga.jpg);
     background-size: cover;
@@ -24,11 +24,10 @@ body{
     color: white;
     font-size: 30px;
     padding: 20px;
-    transition: all 5s;
+    transition: all 2s;
 }
 .containerList a:hover{
     text-decoration: underline;
-    
 }
 
 
@@ -38,30 +37,28 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-
-    font-family: Arial, Helvetica, sans-serif;
-
+    align-items: start; 
+    font-family: 'Times New Roman', Times, serif
 }
 
 .indexTitulo h1 {
-    font-size: 170px;
+    font-size: 13rem;
     font-weight: normal;
     margin: 0px;
-    margin-left: 120px;
+    margin-left: 100px;
 }
 
 .indexTitulo p {
     font-size: 60px;
     margin-bottom: 0px;
-    margin-left: 128px;
+    margin-left: 100px;
 }
 
 /*-------------------------TURISMO----------------------------------- */
 
 
 .indexTurismo {
-    height: 1000px;
+    height: 100vh;
     background-image: url(../img/turismo.jpg);
     background-size: cover;
     background-position: center;
@@ -80,10 +77,8 @@ body{
 
 .gridTurismo {
     display: flex;
-
     justify-content: space-evenly;
     padding: 0px 50px 0px 50px;
-
 }
 
 .cartasTurismo {
@@ -92,12 +87,10 @@ body{
     border-radius: 10px;
     overflow: hidden;
     transition: all 1s ease;
-
 }
 
 .cartasTurismo:hover {
-    transform: translateY(-10%);
-
+    transform: translateY(-15%);
 } 
 
 
@@ -118,7 +111,6 @@ body{
     padding: 10px;
     border: 1px solid black;
     border-radius: 10px;
-
 }
 
 .cartasTexto {
@@ -135,12 +127,14 @@ body{
 
 .indexGastronomia {
     cursor: default;
-    height: 900px;
+    height: 100vh;
     background-image: url(../img/gastronomia.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .indexGastronomia>div {
@@ -163,7 +157,6 @@ body{
     color: white;
     font-size: 60px;
     margin: 0px;
-    margin-top: 200px;
 }
 
 .indexGastronomia a{
@@ -174,4 +167,10 @@ body{
     padding: 10px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
+    transition: all 1s;
+}
+
+.indexGastronomia a:hover{
+    background-color: white;
+    color: black;
 }
